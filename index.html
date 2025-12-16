@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F7F4ED" />
+    <title>墨韵山河 | MoYun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: '#F7F4ED', // Fish belly white
+              ink: '#333333',   // Soft Ink
+              vermilion: '#FF4C4C', // Stamp Red
+              indigo: '#41555D', // Dai Blue
+              stone: '#8B8B8B',
+            },
+            fontFamily: {
+              serif: ['"Noto Serif SC"', 'serif'],
+              calligraphy: ['"Ma Shan Zheng"', 'cursive'],
+            },
+            backgroundImage: {
+              'paper-texture': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F7F4ED;
+        color: #333333;
+        font-family: "Noto Serif SC", serif;
+      }
+      /* Custom Scrollbar for the elegant look */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #999;
+      }
+      .vertical-text {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+      }
+      /* Hide scrollbar for clean aesthetic but allow scroll */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
